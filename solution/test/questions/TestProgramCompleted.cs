@@ -5,13 +5,11 @@ using System.Collections.Generic;
 
 [TestFixture()]
 public class TestProgramCompleted
-{
-   
+{  
     [SetUp]
 
     public void init()
     {
-
     }
 
     [Test()]
@@ -27,7 +25,7 @@ public class TestProgramCompleted
 
 
         // WHEN | ACT
-        int[] output = Program.TwoNumberSum(inp, sum);
+        int[] output = ProgramCompleted.TwoNumberSum(inp, sum);
 
         //THEN | ASSERT
         Assert.True(output.Length == 2);
@@ -45,7 +43,7 @@ public class TestProgramCompleted
         int sum = 10;
 
         // WHEN | ACT
-        int[] output = Program.TwoNumberSum(inp, sum);
+        int[] output = ProgramCompleted.TwoNumberSum(inp, sum);
 
         //THEN | ASSERT
         //Assert.Throws<Exception>(() => ProgramCompleted.breakingAction(sum));
@@ -53,7 +51,6 @@ public class TestProgramCompleted
         Assert.True(expected.Length == 2);
         Assert.True(Array.Exists(output, e => e == expected[0]));
         Assert.True(Array.Exists(output, e => e == expected[1]));
-
        
     }
     /// <summary>

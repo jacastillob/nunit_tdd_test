@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class Program
 {
-	public static int[] TwoNumberSum(int[] array, int targetSum)
+	public static int[] algorithm(int[] array, int targetSum)
 	{
 		// Write your code here.
 		HashSet<int> nums = new HashSet<int>();
