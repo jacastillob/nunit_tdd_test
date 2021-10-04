@@ -5,7 +5,7 @@ using NUnit.Framework;
 public class TestQueue
 {
     
-
+    [Test]
     public void enqueue()
     {
         //GIVEN
@@ -15,10 +15,12 @@ public class TestQueue
         myQueue.enqueue(15);
         myQueue.enqueue(25);
         myQueue.enqueue(35);
+        int value = myQueue.peek();
         //THEN
         Assert.True(myQueue.size==4);
+        Assert.True(value == 5);
     }
-
+    [Test]
     public void dequeue()
     {
         //GIVEN
@@ -28,10 +30,13 @@ public class TestQueue
         myQueue.enqueue(15);
         myQueue.enqueue(25);
         myQueue.enqueue(35);
+        myQueue.dequeue();
+        int value = myQueue.peek();
         //THEN
-
+        Assert.True(myQueue.size == 3);
+        Assert.True(value == 15);
     }
-
+    [Test]
     public void peek()
     {
         //GIVEN
