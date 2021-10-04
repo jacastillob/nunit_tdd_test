@@ -1,28 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class Program
+public static class Program
 {
-	public static int[] algorithm(int[] array, int targetSum)
-	{
-		// Write your code here.
-		HashSet<int> nums = new HashSet<int>();
-
-        foreach (int num in array)
+	public static int NonConstructibleChange(int[] coins)
+	{   //sort array
+		Array.Sort(coins);
+		int change = 0;
+		// O(n)
+        foreach (int coin in coins)
         {
-			int potential = targetSum - num;
-            if (nums.Contains(potential))
-            {
-                return new int[] { potential, num };
-            }
-            else
-            {
-                nums.Add(num);
-            }
-
+			if (coin > change + 1) { 
+				return change + 1;
+			}
+			
+			change += coin;
         }
 
-		return new int[0];
+		return change+1;
 	}
 }
 

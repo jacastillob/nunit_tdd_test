@@ -58,10 +58,57 @@ namespace algo.src.questions
             return (seqIndx == sequence.Count);
         }
 
-      
+      /// <summary>
+      /// This function throw an exception to see how Nunit reacts to handle it
+      /// </summary>
+      /// <param name="sum"></param>
+      /// <returns></returns>
         public static int breakingAction(int sum)
         {
             return sum / 0;
+        }
+
+        public static int[] SortedSquaredArray(int[] array)
+        {
+            int[] sortedSquares = new int[array.Length];
+            // Write your code here.
+            int smallerValueIndx = 0;
+            int largerValueIndx = array.Length - 1;
+
+            for (int indx = array.Length - 1; indx >= 0; indx--)
+            {
+                int smallerValue = array[smallerValueIndx];
+                int largerValue = array[largerValueIndx];
+
+                if (Math.Abs(smallerValue) > Math.Abs(largerValue))
+                {
+                    sortedSquares[indx] = smallerValue * smallerValue;
+                    smallerValueIndx++;
+                }
+                else
+                {
+                    sortedSquares[indx] = largerValue * largerValue;
+                    largerValueIndx--;
+                }
+            }
+            return sortedSquares;
+        }
+        public static int NonConstructibleChange(int[] coins)
+        {   //sort array
+            Array.Sort(coins);
+            int change = 0;
+            // O(n)
+            foreach (int coin in coins)
+            {
+                if (coin > change + 1)
+                {
+                    return change + 1;
+                }
+
+                change += coin;
+            }
+
+            return change + 1;
         }
     }
 }

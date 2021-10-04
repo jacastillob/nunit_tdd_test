@@ -98,6 +98,44 @@ public class TestProgramCompleted
         Assert.True(ProgramCompleted.IsValidSubsequence(array, sequence));
     }
 
+    [Test]
+    public void TestSortedSquaredArray()
+    {
+        //GIVEN | ARRANGE
+        var input = new int[] { 1, 2, 3, 5, 6, 8, 9 };
+        var expected = new int[] { 1, 4, 9, 25, 36, 64, 81 };
+
+        // WHEN | ACT
+        var actual = ProgramCompleted.SortedSquaredArray(input);
+        //THEN | ASSERT
+        for (int i = 0; i < expected.Length; i++)
+        {
+            Assert.True(expected[i] == actual[i]);
+        }
+    }
+
+    [Test()]
+    public void TestNonConstructibleChange()
+    {
+
+        //GIVEN | ARRANGE
+
+        int[] input = new int[] { 5, 7, 1, 1, 2, 3, 22 };
+        int expected = 20;
+
+
+        // WHEN | ACT
+
+        var actual = ProgramCompleted.NonConstructibleChange(input);
+
+        //THEN | ASSERT
+        Assert.True(expected == actual);
+
+
+    }
+
+
+
     [TearDown]
     public void Cleanup()
     {

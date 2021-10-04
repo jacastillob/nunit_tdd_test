@@ -11,14 +11,17 @@ public class Test
 
         //GIVEN | ARRANGE
 
+        int[] input = new int[] { 5, 7, 1, 1, 2, 3, 22 };
+        int expected = 20;
+
 
         // WHEN | ACT
-        int[] output = Program.algorithm(new int[] { 3, 5, -4, 8, 11, 1, -1, 6 }, 10);
+
+        var actual =  Program.NonConstructibleChange(input);
 
         //THEN | ASSERT
-        Assert.True(output.Length == 2);
-        Assert.True(Array.Exists(output, e => e == -1));
-        Assert.True(Array.Exists(output, e => e == -1));
+        Assert.True(expected == actual);
+
 
     }
 }
