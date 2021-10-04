@@ -36,6 +36,10 @@
     <Compile Include="src\Program.cs" />
     <Compile Include="src\questions\ProgramCompleted.cs" />
     <Compile Include="test\questions\TestProgramCompleted.cs" />
+    <Compile Include="src\Queue.cs" />
+    <Compile Include="src\Stack.cs" />
+    <Compile Include="test\TestStack.cs" />
+    <Compile Include="test\TestQueue.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
