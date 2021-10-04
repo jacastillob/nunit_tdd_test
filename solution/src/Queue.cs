@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-// First In First Out
+// First In First Out -> FiFo
 public class Queue<T>
 {
-
     #region Attributes
     private LinkedList<T> queueList;
     public int size {
@@ -28,7 +27,7 @@ public class Queue<T>
     {
         queueList.RemoveLast();
     }
-
+    // O(1)
     public T peek()
     {
         return queueList.Last();
