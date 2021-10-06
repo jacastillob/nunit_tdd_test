@@ -94,7 +94,6 @@ namespace solid.o.after
 
             AreaCalculator areas = new AreaCalculator(shapes);
             SumCalculatorOutputter output = new SumCalculatorOutputter(areas);
-            // Now the logic belongs to eachs class and that satisfies the single responsibility principle
             Console.WriteLine(output.JSON());
             Console.WriteLine(output.HTML());
 

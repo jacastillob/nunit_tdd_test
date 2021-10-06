@@ -44,6 +44,10 @@
     <Compile Include="src\S.O.L.I.D\S\After.cs" />
     <Compile Include="src\S.O.L.I.D\O\After.cs" />
     <Compile Include="src\S.O.L.I.D\O\Before.cs" />
+    <Compile Include="src\S.O.L.I.D\I\After.cs" />
+    <Compile Include="src\S.O.L.I.D\I\Before.cs" />
+    <Compile Include="src\S.O.L.I.D\D\Before.cs" />
+    <Compile Include="src\S.O.L.I.D\D\After.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -56,6 +60,8 @@
     <Folder Include="src\S.O.L.I.D\" />
     <Folder Include="src\S.O.L.I.D\S\" />
     <Folder Include="src\S.O.L.I.D\O\" />
+    <Folder Include="src\S.O.L.I.D\I\" />
+    <Folder Include="src\S.O.L.I.D\D\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
