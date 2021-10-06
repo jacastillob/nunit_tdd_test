@@ -40,6 +40,10 @@
     <Compile Include="src\Stack.cs" />
     <Compile Include="test\TestStack.cs" />
     <Compile Include="test\TestQueue.cs" />
+    <Compile Include="src\S.O.L.I.D\S\Before.cs" />
+    <Compile Include="src\S.O.L.I.D\S\After.cs" />
+    <Compile Include="src\S.O.L.I.D\O\After.cs" />
+    <Compile Include="src\S.O.L.I.D\O\Before.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -49,6 +53,9 @@
     <Folder Include="test\" />
     <Folder Include="src\questions\" />
     <Folder Include="test\questions\" />
+    <Folder Include="src\S.O.L.I.D\" />
+    <Folder Include="src\S.O.L.I.D\S\" />
+    <Folder Include="src\S.O.L.I.D\O\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
