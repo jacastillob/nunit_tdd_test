@@ -48,6 +48,9 @@
     <Compile Include="src\S.O.L.I.D\I\Before.cs" />
     <Compile Include="src\S.O.L.I.D\D\Before.cs" />
     <Compile Include="src\S.O.L.I.D\D\After.cs" />
+    <Compile Include="src\questions\Tree\ClosestValue.cs" />
+    <Compile Include="test\questions\Tree\TestBst.cs" />
+    <Compile Include="src\questions\Tree\NodeDepths.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -62,6 +65,8 @@
     <Folder Include="src\S.O.L.I.D\O\" />
     <Folder Include="src\S.O.L.I.D\I\" />
     <Folder Include="src\S.O.L.I.D\D\" />
+    <Folder Include="src\questions\Tree\" />
+    <Folder Include="test\questions\Tree\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

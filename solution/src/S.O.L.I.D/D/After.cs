@@ -3,7 +3,7 @@ namespace solid.d.after
 {
     public interface DBConnectionInterface
     {
-        public string connect();
+         string connect();
     }
 
     public class MySQLConnection: DBConnectionInterface
