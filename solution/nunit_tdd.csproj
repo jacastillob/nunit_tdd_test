@@ -51,6 +51,7 @@
     <Compile Include="src\questions\Tree\ClosestValue.cs" />
     <Compile Include="test\questions\Tree\TestBst.cs" />
     <Compile Include="src\questions\Tree\NodeDepths.cs" />
+    <Compile Include="src\questions\Graph\AdjacencyList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -67,6 +68,7 @@
     <Folder Include="src\S.O.L.I.D\D\" />
     <Folder Include="src\questions\Tree\" />
     <Folder Include="test\questions\Tree\" />
+    <Folder Include="src\questions\Graph\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
